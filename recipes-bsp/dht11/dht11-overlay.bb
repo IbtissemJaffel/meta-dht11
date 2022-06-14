@@ -12,3 +12,4 @@ do_install(){
 }
 
 COMPATIBLE_MACHINE = "raspberrypi3"
+FILES_${PN} = "/boot/overlays/dht11.dtbo"
