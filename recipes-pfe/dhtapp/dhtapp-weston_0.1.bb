@@ -11,3 +11,5 @@ RDEPENDS_${PN} += "qtwayland"
 S = "${WORKDIR}/git"
 
 inherit qmake5
+
+FILES_${PN} = "/opt/Temperature/bin/Temperature"
