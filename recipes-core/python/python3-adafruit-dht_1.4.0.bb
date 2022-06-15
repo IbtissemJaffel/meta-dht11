@@ -14,3 +14,5 @@ S = "${WORKDIR}/Adafruit_DHT-1.4.0"
 RDEPENDS_${PN} = ""
 
 inherit setuptools3
+
+DISTUTILS_INSTALL_ARGS_append = " --force-pi"

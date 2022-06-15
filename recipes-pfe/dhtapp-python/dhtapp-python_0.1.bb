@@ -9,4 +9,6 @@ do_install(){
     install -m 0644 ${WORKDIR}/dht11app.py ${D}/opt/Temperature/bin
 }
 
+RDEPENDS_${PN} = "python3-adafruit-dht"
+
 FILES_${PN} = "/opt/Temperature/bin/dht11app.py"
