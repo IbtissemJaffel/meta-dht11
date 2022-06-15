@@ -3,7 +3,7 @@ SUMMARY = "QT Application for DHT11 Temperature Sensor"
 LICENSE = "CLOSED"
 
 SRC_URI = "git://github.com/IbtissemJaffel/QT_Temperature_Chart.git;protocol=https;branch=main"
-SRCREV = "7b3ecaa1ed2019879522be75972ea258c9f8e3fc"
+SRCREV = "729c37f94f1217483381cda1905ead369a479e34"
 
 DEPENDS += "qtbase qtcharts"
 RDEPENDS_${PN} += "qtwayland"
