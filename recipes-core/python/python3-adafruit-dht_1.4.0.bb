@@ -13,6 +13,10 @@ S = "${WORKDIR}/Adafruit_DHT-1.4.0"
 
 RDEPENDS_${PN} = ""
 
+do_install_append(){
+	sed 's/Raspberry_Pi_2_Driver/Raspberry_Pi_Driver/g' ${D}/usr/lib/python3.8/site-packages/Adafruit_DHT/Raspberry_Pi_2.py
+}
+
 inherit setuptools3
 
 DISTUTILS_INSTALL_ARGS_append = " --force-pi"
